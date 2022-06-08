@@ -1,0 +1,8 @@
+Aplikasi Kalkulator
+
+Buatlah sebuah aplikasi Kalkulator yang didalamnya terdapat sebuah:
+- Interface CalcOps yang mempunyai sebuah abstract method: DoCalc() float64
+- Struct Substraction dan Struct Addition yang masing-masing memiliki properti num1 dan num2 (float64)
+- Implementasi Interface yang dibuat dengan operasi Kalkulator masing-masing
+- Struct Calculator yang memiliki properti CalcOps (Interface), 
+  fungsi ini digunakan untuk mencetak hasil dari Implementasi Interface Substraction dan Addition, berikan nama method result()
