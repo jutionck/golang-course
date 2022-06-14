@@ -34,10 +34,10 @@ func TestGetCubeVolumeService(t *testing.T) {
 		useCase := NewCubeService(repo)
 		actual, err := useCase.GetCubeVolume()
 		if err == nil {
-			t.Error("Numbers can't be negative")
+			t.Error("Get cube volume error")
 		}
 		if actual < 0 {
-			t.Error("Numbers can't be negative")
+			t.Error("Should be zero number")
 		}
 	})
 }
@@ -63,10 +63,10 @@ func TestGetCubeAreService(t *testing.T) {
 		useCase := NewCubeService(repo)
 		actual, err := useCase.GetCubeArea()
 		if err == nil {
-			t.Error("Numbers can't be negative")
+			t.Error("Get cube area error")
 		}
 		if actual < 0 {
-			t.Error("Numbers can't be negative")
+			t.Error("Should be zero number")
 		}
 	})
 }

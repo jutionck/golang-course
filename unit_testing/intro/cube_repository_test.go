@@ -31,10 +31,10 @@ func TestCubeRepositoryVolume(t *testing.T) {
 		repo := NewCubeRepostory(cubeMock)
 		actual, err := repo.Volume()
 		if err == nil {
-			t.Error("Numbers can't be negative")
+			t.Error("Cube repository error")
 		}
 		if actual < 0 {
-			t.Error("Numbers can't be negative")
+			t.Error("Should be zero number")
 		}
 	})
 }
@@ -53,15 +53,15 @@ func TestCubeRepositoryArea(t *testing.T) {
 		}
 	})
 
-	t.Run("When the input side is negative number", func(t *testing.T) {
+	t.Run("When Cube Repo", func(t *testing.T) {
 		cubeMock := Cube{Side: -4}
 		repo := NewCubeRepostory(cubeMock)
 		actual, err := repo.Area()
 		if err == nil {
-			t.Error("Numbers can't be negative")
+			t.Error("Cube repository error")
 		}
 		if actual < 0 {
-			t.Error("Numbers can't be negative")
+			t.Error("Should be zero number")
 		}
 	})
 }
